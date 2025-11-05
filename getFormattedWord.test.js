@@ -17,6 +17,8 @@ describe("convert the whole word to upper case",()=>{
     })
 })
 
-
+test("returns an empty string when no argument is provided", () => {
+  expect(getFormattedWord()).toBe("");
+});
 
 

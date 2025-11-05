@@ -1,3 +1,4 @@
+import divide from "./divide.js";
 import multiply from "./multiply.js";
 import sum from "./sum.js";
 
@@ -19,4 +20,15 @@ describe("multiplication",()=>{
         expect(multiply(2,5)).toBe(10)
     })
      
+})
+
+
+describe('division',()=>{
+    test("6/2 to equal 3", ()=>{
+        expect(divide(6,2)).toBe(3)
+    })
+
+     test('1/1 to equal 1',()=>{
+        expect(divide(1,1)).toBe(1)
+     })
 })

@@ -1,6 +1,14 @@
-import { getFormattedWord } from "./getFormattedWord.js";
+import getFormattedWord from "./getFormattedWord.js";
 
-test("Capitalize the first letter of a word ",()=>{
-    expect(getFormattedWord('hello')).toBe("Hello")
-})
+test("capitalizes first letter", () => {
+  expect(getFormattedWord("boy")).toBe("Boy");
+});
+
+test("returns empty string if input is falsy", () => {
+  expect(getFormattedWord("")).toBe("");
+  expect(getFormattedWord(null)).toBe("");
+});
+
+
+
 

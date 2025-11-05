@@ -4,12 +4,22 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "module",
+ 
   "main": "getFormattedWord.js",
+ 
+  "type": "module",
   "scripts": {
-        "test": "jest"
-      },
-  "dependencies": {
-    "jest": "^30.2.0"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "@babel/preset-env": "^7.25.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
+
 }

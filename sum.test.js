@@ -1,3 +1,4 @@
+import multiply from "./multiply.js";
 import sum from "./sum.js";
 
 describe('sum function', ()=>{
@@ -10,4 +11,12 @@ if('should handle negative numbers ',()=>{
   test('should add zero correctly', ()=>{
     expect(sum(-2,0)).toBe(-2)
   })
+})
+
+describe("multiplication",()=>{
+
+    test('2*5 to equal 10',()=>{
+        expect(multiply(2,5)).toBe(10)
+    })
+     
 })
